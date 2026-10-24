@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sign in · Connectly</title><link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body class="auth-page">
+<main class="layout">
+  <section class="brand-panel">
+    <div class="brand-mark">c</div><p class="eyebrow">YOUR PEOPLE. YOUR PLACE.</p>
+    <h1>Good things happen when we <span>connect.</span></h1>
+    <p class="brand-copy">A little space to catch up, share moments, and stay close to the people who matter.</p>
+    <div class="decor decor-one"></div><div class="decor decor-two"></div>
+  </section>
+  <section class="form-panel"><div class="form-card">
+    <div class="mobile-brand"><span class="brand-mark small">c</span> connectly</div>
+    <p class="eyebrow">WELCOME BACK</p><h2>Sign in</h2><p class="subheading">Pick up right where you left off.</p>
+    <div class="notice success" th:if="${param.registered}">Account created. You can sign in now.</div>
+    <div class="notice success" th:if="${param.logout}">You have been signed out.</div>
+    <div class="notice error" th:if="${param.error}">Invalid username or password.</div>
+    <form th:action="@{/login}" method="post" class="auth-form">
+      <input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}">
+      <label for="username">Username</label><input id="username" name="username" type="text" placeholder="Your username" autocomplete="username" required autofocus>
+      <label for="password">Password</label><input id="password" name="password" type="password" placeholder="Your password" autocomplete="current-password" required>
+      <button class="primary-button" type="submit">Sign in <span>→</span></button>
+    </form>
+    <p class="switch-copy">New around here? <a th:href="@{/register}">Create an account</a></p>
+    <p class="fine-print">Demo application · Spring Boot + MySQL + Docker Swarm</p>
+  </div></section>
+</main>
+</body></html>

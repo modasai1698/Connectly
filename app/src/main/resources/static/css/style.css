@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
+:root{--ink:#20203a;--muted:#77788e;--purple:#6656e8;--purple-dark:#5142d0}
+*{box-sizing:border-box}body{margin:0;color:var(--ink);font-family:'DM Sans',Arial,sans-serif}
+.auth-page{min-height:100vh;background:#f6f6fb}.layout{min-height:100vh;display:grid;grid-template-columns:.92fr 1.08fr}
+.brand-panel{position:relative;overflow:hidden;padding:54px clamp(35px,6vw,92px);color:white;background:linear-gradient(145deg,#302568,#5545c8 55%,#8274f4);display:flex;flex-direction:column;justify-content:center}
+.brand-mark{width:48px;height:48px;display:inline-flex;align-items:center;justify-content:center;border-radius:16px;background:white;color:#5b4bd9;font:800 30px 'Manrope',sans-serif;box-shadow:0 8px 25px #1d174533}
+.brand-panel .eyebrow{margin-top:76px;color:#c9c4ff}.eyebrow{margin:0 0 12px;color:#7467e5;font-size:11px;letter-spacing:2.1px;font-weight:700}
+.brand-panel h1{max-width:530px;margin:0;font:800 clamp(38px,4.1vw,58px)/1.13 'Manrope',sans-serif;letter-spacing:-2px}.brand-panel h1 span{color:#c9c3ff}
+.brand-copy{max-width:430px;margin-top:25px;color:#e0ddff;font-size:16px;line-height:1.8}.decor{position:absolute;border:1px solid #ffffff24;border-radius:50%;pointer-events:none}
+.decor-one{width:420px;height:420px;right:-240px;top:-115px;box-shadow:0 0 0 35px #ffffff08,0 0 0 75px #ffffff06}.decor-two{width:300px;height:300px;left:-220px;bottom:-165px;box-shadow:0 0 0 35px #ffffff08,0 0 0 70px #ffffff06}
+.form-panel{display:flex;align-items:center;justify-content:center;padding:45px 28px}.form-card{width:100%;max-width:410px}.mobile-brand{display:none;align-items:center;gap:10px;margin-bottom:38px;font:800 18px 'Manrope',sans-serif}
+.brand-mark.small{width:34px;height:34px;border-radius:11px;font-size:22px;box-shadow:none}.form-card h2{margin:0;font:800 36px 'Manrope',sans-serif;letter-spacing:-1.2px}
+.subheading{margin:9px 0 28px;color:var(--muted);font-size:14px}.auth-form{display:flex;flex-direction:column}.auth-form label{margin:15px 0 8px;color:#36364d;font-size:12px;font-weight:700}
+.auth-form input{width:100%;height:48px;padding:0 14px;border:1px solid #e1e1ed;border-radius:11px;outline:none;background:white;color:var(--ink);font:14px 'DM Sans',sans-serif;transition:border-color .15s,box-shadow .15s}
+.auth-form input:focus{border-color:#8a7df3;box-shadow:0 0 0 4px #7969ed19}.auth-form input::placeholder{color:#aaaabc}
+.primary-button{display:flex;justify-content:space-between;align-items:center;height:50px;margin-top:27px;padding:0 17px;border:0;border-radius:11px;background:var(--purple);color:white;font:700 14px 'DM Sans',sans-serif;cursor:pointer;box-shadow:0 8px 18px #6656e82b;transition:background .15s,transform .15s}
+.primary-button:hover{background:var(--purple-dark);transform:translateY(-1px)}.primary-button span{font-size:20px}
+.switch-copy{margin:24px 0 0;color:var(--muted);text-align:center;font-size:13px}a{color:var(--purple);text-decoration:none;font-weight:700}a:hover{text-decoration:underline}
+.fine-print{margin-top:40px;color:#a0a0b2;text-align:center;font-size:10px}.notice{padding:11px 13px;border-radius:9px;margin:0 0 12px;font-size:12px;line-height:1.5}
+.notice.success{color:#176b4b;background:#e7f8ef}.notice.error{color:#b52d47;background:#fff0f2}.field-error{margin:5px 0 0;color:#b52d47;font-size:11px}
+.dashboard-page{min-height:100vh;background:#f7f7fc}.topbar{height:78px;padding:0 clamp(22px,7vw,110px);display:flex;align-items:center;justify-content:space-between;background:white;border-bottom:1px solid #eeeeF5}
+.wordmark{display:flex;align-items:center;gap:10px;color:var(--ink);font:800 18px 'Manrope',sans-serif}.wordmark:hover{text-decoration:none}
+.logout-button{border:1px solid #e6e4f7;border-radius:9px;padding:10px 14px;background:white;color:#5a4bd2;font:700 12px 'DM Sans',sans-serif;cursor:pointer}
+.logout-button:hover{background:#f5f3ff}.dashboard-wrap{max-width:1100px;margin:48px auto;padding:0 24px}
+.welcome-card{position:relative;display:flex;min-height:280px;overflow:hidden;align-items:center;justify-content:space-between;padding:48px 54px;border-radius:24px;color:white;background:linear-gradient(115deg,#34286f,#6555e6 75%,#8a7cf7);box-shadow:0 18px 50px #4e40b522}
+.welcome-card .eyebrow{color:#c9c3ff}.welcome-card h1{margin:0;font:800 clamp(30px,4vw,46px) 'Manrope',sans-serif;letter-spacing:-1.5px}.welcome-card h1 span{color:#d8d3ff}
+.welcome-card p:not(.eyebrow){max-width:470px;color:#e4e0ff;line-height:1.7;font-size:14px}.status-pill{display:inline-flex;align-items:center;gap:8px;margin-top:13px;padding:9px 12px;border:1px solid #ffffff35;border-radius:30px;color:white;font-size:11px}
+.status-pill span{width:7px;height:7px;border-radius:50%;background:#7cf0b5;box-shadow:0 0 0 4px #7cf0b522}
+.welcome-art{position:relative;width:210px;height:210px;flex:0 0 210px;margin-right:20px}.orbit{position:absolute;inset:10px;border:1px solid #ffffff48;border-radius:50%}.orbit-b{inset:35px -15px;transform:rotate(-35deg)}
+.art-dot{position:absolute;inset:50px;display:flex;align-items:center;justify-content:center;border-radius:35px;background:#ffffff20;border:1px solid #ffffff66;font:800 82px 'Manrope',sans-serif;transform:rotate(-9deg)}
+.info-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:23px}.info-card{padding:25px;border:1px solid #eeeef6;border-radius:17px;background:white}
+.icon-box{display:flex;align-items:center;justify-content:center;width:42px;height:42px;border-radius:13px;font-size:12px;font-weight:800}.icon-box.purple{color:#6555d9;background:#eeebff}.icon-box.peach{color:#bc6d48;background:#fff0e8}.icon-box.mint{color:#23866c;background:#e6f8f1}
+.info-card h3{margin:20px 0 9px;font:700 15px 'Manrope',sans-serif}.info-card p{margin:0;color:var(--muted);font-size:12px;line-height:1.8}
+.dashboard-foot{margin-top:42px;color:#a4a4b6;text-align:center;font-size:9px;letter-spacing:1.8px}.dashboard-foot span{padding:0 8px;color:#8b7df0}
+@media(max-width:850px){.layout{grid-template-columns:1fr}.brand-panel{display:none}.form-panel{min-height:100vh;padding:35px 22px}.mobile-brand{display:flex}.form-card h2{font-size:32px}.fine-print{margin-top:30px}.welcome-card{padding:35px 28px}.welcome-art{width:130px;height:130px;flex-basis:130px;margin-right:0}.art-dot{inset:32px;border-radius:25px;font-size:54px}.info-grid{grid-template-columns:1fr}}
+@media(max-width:560px){.welcome-card{min-height:auto;padding:30px 23px}.welcome-art{display:none}.dashboard-wrap{margin-top:25px;padding:0 15px}.topbar{height:68px;padding:0 17px}}
